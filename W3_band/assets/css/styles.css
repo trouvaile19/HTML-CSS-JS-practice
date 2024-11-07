@@ -16,9 +16,11 @@
 3. màu sắc 
 4. kiểu dáng (Kiểu chữ, hình tròn, vuông,...)
 */
+/* Common */
 
 html{
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .clear{
@@ -27,6 +29,28 @@ html{
 
 .text-white{
     color: #fff !important;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.col{
+    float: left;
+    padding-left:  8px;
+    padding-right: 8px;
+}
+.col-third{
+    width: calc(100%/3);
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.text-center{
+    text-align: center !important;
 }
 
 #header{
@@ -147,13 +171,9 @@ html{
     color: #fff;
 }
 
-#content{
-    
-}
-
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 120px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -182,12 +202,6 @@ html{
 
 #content .members-list{
     margin-top: 48px;
-}
-
-#content .member-item{
-    float: left;
-    width: 33.33%;
-    text-align: center;
 }
 
 #content .member-name {
@@ -240,19 +254,9 @@ html{
 
 /* Places */
 .places-list {
-    /* margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px; */
-    margin: 32px -8px 0 ;
-    padding-bottom: 48px;
+    margin-top: 32px;
 }
 
-.place-item {
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
-
-}
 .place-img {
     width: 100%;
     display: block;
@@ -297,10 +301,67 @@ html{
     color: #000;
 }
 
+/* ---contact-- */
+.contact-content{
+    padding-top: 32px;
+}
+.contact-info{
+    font-size: 18px;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    height: 40px;
+    margin: 0 8px 8px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+}
+.submit-btn{
+    background-color: #000;
+    color: #ffffff;
+    height: 38px ;
+    width: 73.5px;
+    float: right;
+    margin: 11px -8px 50px;
+}
+.btn-hover:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    border: none;
+}
+.map-img{
+    width: 100%;
+}
 /* Footer section */
 #footer{
-     
+    text-align: center;
+    padding: 64px 16px;
 }
+.icon{
+    text-decoration: none;
+    color: #757575;
+    font-size: 20px;
+}
+icon:hover{
+    color:rgba(0, 0, 0, 0.4)
+}
+.copy-right{
+    font: 15px;
+    color: #757575;
+    margin: 15px 0;
+}
+.powered{
+    color: #757575;
+}
+/* --------------------------------- */
+
 
 .modal{
     position: fixed;
