@@ -1,0 +1,112 @@
+.main_product{
+    display: flex;
+}
+.main_product-img {
+    background-image: url('https://classic.vn/wp-content/uploads/2020/03/nuoc-hoa-creed-aventus-800x800.jpeg');
+    background-size: cover;     /* Điều chỉnh ảnh để vừa với khung mà không bị cắt */
+    background-repeat: no-repeat; /* Không lặp ảnh */
+    background-position: center;
+    margin: 0 16px;
+    width: 40%;
+    padding-top: 40%;
+    display: inline-block;
+}
+.main_product-info{
+    width: 60%;
+    padding: 12px;
+}
+.main_pro-name{
+    margin-top: 5px;
+}
+
+/* column layout*/
+.column-layout{
+    margin-top: 36px;
+    padding: 12px 0;
+    background-color: #fff;
+    display: flex;
+
+}
+.column-layout_category{
+    width: 20%;
+    padding: 0 16px;
+}
+.column-layout_container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.column-item{
+    width: 25%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+/* table layout */
+.card-layout{
+    margin: 0 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.feature-item{
+    width: 30%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.feature-item:nth-child(1){
+    background-color: antiquewhite;
+}
+.feature-item:nth-child(2){
+    background-color: aquamarine;
+}
+.feature-item:nth-child(3){
+    background-color: aqua;
+}
+/* Mobile and table: width <1024px  */
+@media only screen and (max-width: 63.9375em){
+    .main_product{
+        flex-direction: column-reverse;
+    }
+    .main_pro-desc{
+        display: none;
+    }
+    
+}
+
+ /* Mobile: width < 740px  */
+@media only screen and (max-width: 46.1875em){
+    .main_product-img{
+        width: 95%;
+        padding-top: 85%;
+    }
+    /*course*/
+    .column-layout_container{
+        width: 100%;
+    }
+    .column-item{
+        width: 100%;
+        text-align: center;
+    }
+    .column-layout_category{
+        display: none;
+    }
+    /* Feature */
+    .feature-item{
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+/* tablet: width >=740px and width < 1024px */ 
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    /*Product*/
+    .main_product-img{
+        width: 85%;
+        padding-top: 85%;
+    }
+    /*Course*/
+    .column-item{
+        width: 50%;
+    }
+    /* Feature */
+}
